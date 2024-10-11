@@ -48,3 +48,53 @@ Route::get('/gyms/index', function () {
     ]
         ]);
 });
+
+Route::get('/gyms/presensi', function () {
+    return view('gyms.presensi', [
+        'members' => [
+            [
+            'nama' => 'Haechan',
+            'email' => 'fullsun@gmail.com',
+            'noTelp' => '08123456789',
+            'jenisKartu' => 'gold',
+            'metode' => 'hutangTeman',
+            ],
+            [
+            'nama' => 'Jungwoo',
+            'email' => 'obok@gmail.com',
+            'noTelp' => '08123456789',
+            'jenisKartu' => 'silver',
+            'metode' => 'langsungBayar',
+            ],
+            [
+            'nama' => 'Taeyong',
+            'email' => 'bubu@gmail.com',
+            'noTelp' => '08123456789',
+            'jenisKartu' => 'gold',
+            'metode' => 'hutangTeman',
+            ],
+            [
+            'nama' => 'Mark',
+            'email' => 'melk@gmail.com',
+            'noTelp' => '08123456789',
+            'jenisKartu' => 'silver',
+            'metode' => 'langsungBayar',
+            ],
+            [
+            'nama' => 'Johnny',
+            'email' => 'chicago@gmail.com',
+            'noTelp' => '08123456789',
+            'jenisKartu' => 'gold',
+            'metode' => 'hutangTeman',
+            ],
+            [
+            'nama' => 'Chenle',
+            'email' => 'daegal@gmail.com',
+            'noTelp' => '08123456789',
+            'jenisKartu' => 'silver',
+            'metode' => 'langsungBayar',
+            ],
+
+        ]
+    ]);
+});
